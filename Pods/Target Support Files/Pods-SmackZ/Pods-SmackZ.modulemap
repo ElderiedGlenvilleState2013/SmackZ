@@ -1,0 +1,6 @@
+framework module Pods_SmackZ {
+  umbrella header "Pods-SmackZ-umbrella.h"
+
+  export *
+  module * { export * }
+}
