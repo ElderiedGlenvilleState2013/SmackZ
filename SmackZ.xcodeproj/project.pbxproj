@@ -19,6 +19,7 @@
 		DA60BF5F207EE4AF00DD27AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA60BF5E207EE4AF00DD27AD /* Assets.xcassets */; };
 		DA60BF62207EE4AF00DD27AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA60BF60207EE4AF00DD27AD /* LaunchScreen.storyboard */; };
 		DA60BF6F207F09A500DD27AD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA60BF6E207F09A500DD27AD /* SWRevealViewController.m */; };
+		DA8CF55A20841746003D9597 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8CF55920841746003D9597 /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		DA60BF6C207F09A400DD27AD /* SmackZ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmackZ-Bridging-Header.h"; sourceTree = "<group>"; };
 		DA60BF6D207F09A500DD27AD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		DA60BF6E207F09A500DD27AD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		DA8CF55920841746003D9597 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		EBE739E1F779A24678E0967B /* Pods-SmackZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmackZ/Pods-SmackZ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				DA2E7DE12083E66600C98FAF /* ChatVC.swift */,
 				DA2E7DE32083E7DF00C98FAF /* ChannelVC.swift */,
 				DA2E7DEA2084133A00C98FAF /* LoginVC.swift */,
+				DA8CF55920841746003D9597 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				DA2E7DEB2084133A00C98FAF /* LoginVC.swift in Sources */,
 				DA2E7DE62084040B00C98FAF /* GradientView.swift in Sources */,
 				DA60BF6F207F09A500DD27AD /* SWRevealViewController.m in Sources */,
+				DA8CF55A20841746003D9597 /* CreateAccountVC.swift in Sources */,
 				DA2E7DE920840DB400C98FAF /* Constants.swift in Sources */,
 				DA2E7DE22083E66600C98FAF /* ChatVC.swift in Sources */,
 				DA2E7DE42083E7DF00C98FAF /* ChannelVC.swift in Sources */,

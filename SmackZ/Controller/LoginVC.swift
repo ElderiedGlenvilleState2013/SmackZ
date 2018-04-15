@@ -21,6 +21,12 @@ class LoginVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func createAccountBTNPressed(_ sender: Any) {
+        
+        performSegue(withIdentifier: "toCreateAccount", sender: nil)
+    }
+    
+    
     @IBAction func closePressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
         

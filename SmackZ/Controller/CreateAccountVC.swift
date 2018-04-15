@@ -1,5 +1,5 @@
 //
-//  ChannelVC.swift
+//  CreateAccountVC.swift
 //  SmackZ
 //
 //  Created by McKinney family  on 4/15/18.
@@ -8,33 +8,24 @@
 
 import UIKit
 
-class ChannelVC: UIViewController {
+class CreateAccountVC: UIViewController {
 
-    //outlets
-    
-    @IBOutlet var loginBTN: UIButton!
-    
-    
+    @IBAction func closePressed(_ sender: Any) {
+       
+        performSegue(withIdentifier: "unwindToChannel", sender: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
+        // Do any additional setup after loading the view.
     }
 
-    @IBAction func loginBTNPressed(_ sender: Any) {
-        
-        performSegue(withIdentifier: to_Login, sender: nil)
-        
-    }
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func prepareForUnwind(seque: UIStoryboardSegue) {}
-    
+
+ 
 
 }
