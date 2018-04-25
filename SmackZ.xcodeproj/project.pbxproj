@@ -20,6 +20,7 @@
 		DA60BF62207EE4AF00DD27AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA60BF60207EE4AF00DD27AD /* LaunchScreen.storyboard */; };
 		DA60BF6F207F09A500DD27AD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA60BF6E207F09A500DD27AD /* SWRevealViewController.m */; };
 		DA8CF55A20841746003D9597 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8CF55920841746003D9597 /* CreateAccountVC.swift */; };
+		DAA9850D2085838600CBF741 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA9850C2085838600CBF741 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		DA60BF6D207F09A500DD27AD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		DA60BF6E207F09A500DD27AD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		DA8CF55920841746003D9597 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		DAA9850C2085838600CBF741 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		EBE739E1F779A24678E0967B /* Pods-SmackZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmackZ/Pods-SmackZ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 		DA2E7DDE2083E58700C98FAF /* Service  */ = {
 			isa = PBXGroup;
 			children = (
+				DAA9850C2085838600CBF741 /* AuthService.swift */,
 			);
 			path = "Service ";
 			sourceTree = "<group>";
@@ -110,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2E7DE820840DB400C98FAF /* Constants.swift */,
+				DA2E7DDE2083E58700C98FAF /* Service  */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -139,7 +143,6 @@
 				DA60BF6B207F095A00DD27AD /* Supporting File */,
 				DA2E7DE02083E5C100C98FAF /* Model */,
 				DA2E7DDF2083E5A600C98FAF /* View */,
-				DA2E7DDE2083E58700C98FAF /* Service  */,
 				DA2E7DDD2083E54D00C98FAF /* Controller */,
 				DA60BF58207EE4AE00DD27AD /* Main.storyboard */,
 				DA60BF5E207EE4AF00DD27AD /* Assets.xcassets */,
@@ -257,6 +260,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SmackZ/Pods-SmackZ-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moltin/Moltin.framework",
 				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -264,6 +268,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moltin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -287,6 +292,7 @@
 				DA60BF6F207F09A500DD27AD /* SWRevealViewController.m in Sources */,
 				DA8CF55A20841746003D9597 /* CreateAccountVC.swift in Sources */,
 				DA2E7DE920840DB400C98FAF /* Constants.swift in Sources */,
+				DAA9850D2085838600CBF741 /* AuthService.swift in Sources */,
 				DA2E7DE22083E66600C98FAF /* ChatVC.swift in Sources */,
 				DA2E7DE42083E7DF00C98FAF /* ChannelVC.swift in Sources */,
 			);
@@ -437,10 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N762D69GAN;
 				INFOPLIST_FILE = SmackZ/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ElderiedMcKinney.SmackZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmackZ/Supporting File/SmackZ-Bridging-Header.h";
@@ -459,10 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N762D69GAN;
 				INFOPLIST_FILE = SmackZ/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ElderiedMcKinney.SmackZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmackZ/Supporting File/SmackZ-Bridging-Header.h";
