@@ -53,7 +53,7 @@ struct AuthService {
         
         let body: [String: Any] = ["email" : lowerCaseEmail, "password" : password]
         
-        Alamofire.request(URL_REGISTER, method: .post, parameters: body, encoding: JSONEncoder.default, handers: header).responseString{ (response)in
+            >        Alamofire.request(URL_REGISTER, method: .post, parameters: Parameters, encoding: JSONEncoder, headers: header).responseString { (reponse) in
             
             if response.result.error == nil {
                 completion(true)
